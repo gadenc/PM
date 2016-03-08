@@ -1,0 +1,44 @@
+﻿/* File Created: 三月 25, 2014 */
+.main{ 
+    /*background:url('../images/menu_bj_3.gif') top center no-repeat; 
+    padding-top:15px;*/
+    width:1002px; }
+.c_l{
+    float: left;
+    width: 262px;
+    background: none repeat scroll 0% 0% #F5F5F5;
+    padding: 5px 8px 100px;
+}
+ .submenu{ width:260px;}
+ .submenu ul{ width:220px; margin:0 auto;}
+ .submenu ul li a{ display:block;
+                color: #333333;
+                width:140px;
+                height:35px;
+                line-height:35px; 
+                padding:0 40px;
+                text-decoration:none;
+                background: url(../images/bt_left_bg.jpg) no-repeat;
+                white-space:nowrap; 
+                overflow:hidden;
+                -o-text-overflow: ellipsis;    /* for Opera */
+                text-overflow:ellipsis;        /* for IE */}
+
+.submenu li a:hover{color:#f46918;background: url(../images/bt_left_bg.jpg) 0 -60px no-repeat; font-weight:bold;}
+
+.top_20 {
+    margin: 20px 0px 0px;
+    text-align:left;
+}
+.contact{ width:260px; padding-top:10px;}
+.contact ul{ width:230px; margin:0 auto;}
+.contact ul li{ height:30px; line-height:30px; border-bottom:1px dashed #ccc; width:200px;}
+.contact ul li span{ font-weight:bold;}
+
+/*内容区*/
+.c_r{ width:720px; text-align:left;}
+.c_r_t{ font-size:14px; font-weight:bold; font-family:@微软雅黑; margin-top:15px; padding-left:10px; height:30px; line-height:30px; border-bottom:1px solid #ccc;}
+
+#content{float:left;float:left;padding:10px 15px 0 10px;width:695px;}
+#content .main_content{}
+#content .main_content p{ margin:0 0 10px 0;}

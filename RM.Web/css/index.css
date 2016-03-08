@@ -1,0 +1,114 @@
+﻿.top
+{
+    width:1002px; text-align:left; height:60px;
+    margin:0 auto;
+    }
+.logo{width:300px; height:60px;}
+.headinfo{ width:480px; height:60px; text-align:right; padding-right:20px;}
+.nowday{ display:block; width:480px; text-align:right; margin-bottom:10px;}
+.headinfo a{ color:#666;}
+.headinfo a:hover{ color:Red;}
+
+/*导航栏的样式*/
+.nav{ height:41px; background:url("../images/menu_m.gif") repeat-x top; width:1002px; margin:0 auto;}
+#menuss ul#navss{ height:41px; line-height:40px; position:relative; z-index:10;}
+#menuss ul li{ float:left;}
+.navli a{ background: url('../images/menu_line00.gif') no-repeat scroll right 0px transparent;display: block; color:#fff;
+float: left;text-decoration: none;color: #FFF;padding: 0px 26px;height: 41px;line-height: 41px;position: relative;z-index: 41;}
+.navli a:hover{background:url("../images/menu_d.gif") right 0 no-repeat;  color:#000;}
+.stair{ position:absolute; top:41px; width: 998px; left: 0px; background:url("../images/menu_bg.gif") repeat-x top; border:1px solid #ccc; ; z-index:1024px;}
+.list{ margin-left:15px;}
+.list dl{ float:left;}
+.list ul{ height:35px; line-height:35px;}
+.list ul li{ float:left; height:35px; line-height:35px;}
+.list ul li a{ display:block; height:20px; line-height:20px; color:#444; background:none; padding:0px; margin:10px 10px;}
+.list ul li a:hover{ border-bottom:2px solid #C34C22; background:none;}
+/*#menuss #navss li div.stair .list dl div.dt {
+    height: 22px;
+    font: bold 12px/22px arial;
+    color: #1B1B1B;
+    padding: 0px;
+    text-decoration: none;
+    text-indent: 5px;
+}
+
+#menuss #navss li div.stair .list dl dd a.d {
+    height: 19px;
+    line-height: 19px;
+    color: #444;
+    padding: 0px;
+    display: block;
+    float: none;
+    background: url('images/menu_icon1.gif') no-repeat scroll 6px 8px transparent;
+}
+
+
+#menuss #navss li div.stair .list dl a:hover{ color:#000; text-align:left; text-decoration:underline;}
+#menuss #navss li div.stair .list dl dt                     { height:22px; font:bold 12px /22px arial; color:#1b1b1b; padding:0;}
+#menuss #navss li div.stair .list dl div.dt                 { height:22px; font:bold 12px /22px arial; color:#1b1b1b; padding:0; text-decoration:none; text-indent:5px;}
+#menuss #navss li div.stair .list dl div.dt a               { display:block; height:22px; font:bold 12px /22px arial; color:#444; padding:0; text-decoration:none; text-indent:5px;}
+#menuss #navss li div.stair .list dl div.dt a:hover         { color:#004b90; text-decoration:none;}
+#menuss #navss li div.stair .list dl div.dt a.a4            { background:url(images/menu_icon1.gif) 61px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a4:hover      { background:#444 url(images/menu_icon01.gif) 51px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a5            { background:url(images/menu_icon1.gif) 74px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a5:hover      { background:#444 url(images/menu_icon01.gif) 74px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a6            { background:url(images/menu_icon1.gif) 86px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a6:hover      { background:#444 url(images/menu_icon01.gif) 86px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a7            { background:url(images/menu_icon1.gif) 99px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a7:hover      { background:#444 url(images/menu_icon01.gif) 99px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a8            { background:url(images/menu_icon1.gif) 113px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a8:hover      { background:#444 url(images/menu_icon01.gif) 113px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a9            { background:url(images/menu_icon1.gif) 125px 14px no-repeat;}
+#menuss #navss li div.stair .list dl div.dt a.a9:hover      { background:#444 url(images/menu_icon01.gif) 125px 14px no-repeat;}
+#menuss #navss li div.stair .list dl dd                     { height:19px; font:12px/19px arial; color:#444; padding:0; text-indent:15px; text-align:left;}
+#menuss #navss li div.stair .list dl dd a.d                 { height:19px; line-height:19px; color:#444; background:none; padding:0; display:block; float:none; background:url(images/menu_icon1.gif) 6px 8px no-repeat;}
+#menuss #navss li div.stair .list dl dd a.d:hover           { color:#fff; background:#565656 url(images/menu_icon01.gif) 6px 8px no-repeat; text-decoration:none;}
+#menuss #navss li div.stair .list dl dd.more                { text-indent:0;}
+#menuss #navss li div.stair .list dl dd.more a              { background:none; }
+#menuss #navss li div.stair .list dl dd.more a:hover        { background:none; color:#333;}
+#menuss #navss li div.stair .ad                             { width:100%; padding:10px 0;}*/
+
+/*首页图片滚动样式*/
+.scroll{ width:1002px; height:372px; overflow:hidden; margin:0 auto; border-bottom:1px solid #000;}
+.imgscroll_box{ position:relative; z-index:1px;}
+.imgswap{ width:6000px; height:372px;}
+.imgswap li{ float:left;}
+.imgscrollmenu{ position:absolute; right:10px; bottom:10px; z-index:2; }
+.imgscrollmenu ul li{ float:left; margin-left:5px;}
+.imgscrollmenu ul li{ display:block; border:2px solid #ccc; background:#fff; width:10px; height:10px; cursor:pointer;}
+.imgscrollmenu ul li:hover{ border:2px solid #F46810; background:#FF6600;}
+.imgscrollmenu ul li.current{border:2px solid #F46810; background:#FF6600; }
+
+
+
+
+/*新闻滚动栏*/
+.news{ height:25px; line-height:25px; border:1px solid #ccc; width:1000px; margin:5px auto;}
+.new_l{ width:80px; text-align:center;}
+.new_m{ height:25px; overflow:hidden; text-align:left;}
+
+
+/*mid 样式*/
+.mid{ width:995px; border:1px solid #b5b5b5;  padding-top:10px; padding-left:5px; margin:0 auto; margin-bottom:5px; margin-top:5px;
+      background:url("../images/bjhui.jpg") repeat-x top; padding-bottom:20px;
+      }
+.mid ul li{ float:left; width:199px; text-align:left;}
+.mid ul li dl dt{ height:30px; line-height:30px;}
+.mid ul li dl dt a{ font-weight:bold; color:#000;}
+.mid ul li dl dt a:hover{COLOR: rgb(73,117,160); TEXT-DECORATION: underline;}
+.mid ul li dl dd{ height:20px; line-height:20px; margin-left:5px;}
+.mid ul li dl dd a:hover{COLOR: rgb(73,117,160); TEXT-DECORATION: underline;}
+/*底部样式*/
+.foot{ border-top:2px solid #8AA0B8; padding-top:5px;}
+.copyright{ width:1002px; margin:0px auto;}
+
+
+
+
+
+
+/*内页样式*/
+.banner{ width:1002px; height:273px; margin:0 auto;}
+
+
+

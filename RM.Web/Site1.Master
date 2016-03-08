@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WEB.Site1" %>
+<%@ Register TagPrefix="ucl" TagName="NewsList" Src="UserControl/NewsList.ascx" %>
+<%@ Register TagPrefix="ucl" TagName="contact" Src="UserControl/contact.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="css/menu00.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/imgscroll.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //导航二级菜单代码
+            var st = 180;
+            $(".navli").mouseenter(function () {
+                $(this).parent().find(".stair").stop(false, true).fadeOut();
+                $(this).find(".stair").stop(false, true).slideDown(st);
+            }).mouseleave(function () {
+                $(this).parent().find(".stair").stop(false, true).fadeOut();
+                $(this).find(".stair").stop(false, true).slideUp(st);
+            });
+
+            //首页图片滚动效果
+            //动态添加按钮
+            var m_count = $(".imgswap").find("li").length;
+            for (var i = 0; i < m_count; i++)
+                $(".imgscrollmenu ul").append("<li></li>");
+
+            //自动播放
+            $.scrollContent({
+                content: $(".imgswap li"),
+                btn: $(".imgscrollmenu ul li"),
+                direct: true
+            });
+
+
+        });
+        //document.ready   end
+
+        //新闻滚动js
+        function NewScroll(obj) {
+            if ($(obj).find("ul li").length > 2) {
+                $(obj).find("ul").animate({
+                    marginTop: "-25px"
+                }, 500, function () {
+                    $(this).css({ marginTop: "0px" }).find("li:first").appendTo(this);
+                })
+            }
+        }
+        var t1 = setInterval('NewScroll(".new_m")', 4000);
+    </script>
+    <title>安徽恒科信息技术有限公司</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="top">
+        <div class="logo fl">
+            <img alt="安徽恒科信息技术有限公司" src="images/header_logo.png" /></div>
+        <div class="headinfo fr">
+            <span class="nowday " id="UCheader_lbl">
+                <script type="text/javascript">
+                    var newdate = new Date(); document.write(newdate);</script>
+            </span>
+            <div>
+                <a href="#">资质荣誉</a> <span>|</span> <a href="#">企业文化</a> <span>|</span> <a href="#">
+                    在线招聘</a> <span>|</span> <a href="#">联系我们</a> <span>|</span> <a href="#">登录</a>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="nav">
+        <div id="wrap" align="left">
+            <div id="menuss">
+                <ul id="navss">
+                    <li class="navli"><a class="b" href="Index.aspx"><font style="font-size: 14px">首页</font></a></li>
+                    <asp:Literal runat="server" ID="nav"></asp:Literal>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="width: 1002px; margin: 0 auto;">
+        <div class="banner">
+            <asp:ContentPlaceHolder ID="banner" runat="server">
+                <img src="../images/20126893251.jpg" />
+            </asp:ContentPlaceHolder>
+        </div>
+        <div style="width: 1002px; margin: 0 auto; height: 15px; background: url(images/menu_bj_3.gif) top center no-repeat;">
+        </div>
+        <ucl:NewsList ID="n_l" runat="server"></ucl:NewsList>
+        <div class="main">
+            <div class="c_l fl">
+                <div>
+                    <img src="images/submenu_1.jpg" width="230" height="58" alt="栏目导航" /></div>
+                <div class="submenu">
+                    <asp:Literal runat="server" ID="submenu"></asp:Literal>
+                </div>
+                <ucl:contact runat="server"></ucl:contact>
+            </div>
+            <div class="c_r fr">
+                <div class="c_r_t">
+                    <asp:Label ID="lblTitle" runat="server" Text=""></asp:Label></div>
+                <asp:ContentPlaceHolder ID="content" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="copyright">
+            <div class="H25">
+                版权所有：&copy;2008-2014 安徽恒科信息科技有限公司 皖ICP备05001281号</div>
+            <div class="H25">
+                地址:合肥市安徽大学科技园电子楼206室</div>
+            <div class="H25">
+                总机：0551-5367428 传真：0551-5367448&nbsp;&nbsp;<script type="text/javascript" src="http://s16.cnzz.com/stat.php?id=4225021&web_id=4225021&show=pic"
+                    language="JavaScript"></script>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
